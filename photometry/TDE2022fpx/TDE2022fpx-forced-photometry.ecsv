@@ -1,0 +1,92 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - {name: filename, datatype: string, description: Filename of the image}
+# - {name: date_obs, datatype: string, description: Observation date in ISO8601 format}
+# - {name: mjd_obs, datatype: float64, description: MJD of the observation}
+# - {name: exptime, unit: s, datatype: float64, description: Exposure time in seconds}
+# - {name: band, datatype: string, description: Photometric filter band}
+# - {name: zp, unit: mag, datatype: float64, description: Zero point for magnitudes}
+# - {name: fwhm, unit: px, datatype: float64, description: FWHM in pixels}
+# - {name: seeing, unit: arcsec, datatype: float64, description: FWHM in arcseconds}
+# - {name: mag_lim_global, unit: mag, datatype: float64, description: 3 sigma limit from average background RMS (AB)}
+# - {name: flux, unit: adu, datatype: float64, description: Flux measurement}
+# - {name: flux_err, unit: adu, datatype: float64, description: Flux uncertainty}
+# - {name: mag, unit: mag, datatype: float64, description: Measured magnitude (AB)}
+# - {name: mag_err, unit: mag, datatype: float64, description: Magnitude uncertainty}
+# - {name: mag_min, unit: mag, datatype: float64, description: mag(flux + flux_err) (AB)}
+# - {name: mag_max, unit: mag, datatype: float64, description: mag(flux - flux_err) (AB)}
+# - {name: mag_lim_aper, unit: mag, datatype: float64, description: 3 sigma limit from aperture flux error (AB)}
+# meta:
+#   __serialized_columns__:
+#     date_obs:
+#       __class__: astropy.time.core.Time
+#       format: isot
+#       in_subfmt: '*'
+#       location: !astropy.coordinates.earth.EarthLocation
+#         ellipsoid: WGS84
+#         x: !astropy.units.Quantity
+#           unit: &id001 !astropy.units.Unit {unit: m}
+#           value: 4207201.562307619
+#         y: !astropy.units.Quantity
+#           unit: *id001
+#           value: 895193.5684994106
+#         z: !astropy.units.Quantity
+#           unit: *id001
+#           value: 4696123.672058508
+#       out_subfmt: '*'
+#       precision: 0
+#       scale: utc
+#       value: !astropy.table.SerializedColumn {name: date_obs}
+#     mjd_obs:
+#       __class__: astropy.time.core.Time
+#       format: mjd
+#       in_subfmt: '*'
+#       location: !astropy.coordinates.earth.EarthLocation
+#         ellipsoid: WGS84
+#         x: !astropy.units.Quantity
+#           unit: *id001
+#           value: 4207201.562307619
+#         y: !astropy.units.Quantity
+#           unit: *id001
+#           value: 895193.5684994106
+#         z: !astropy.units.Quantity
+#           unit: *id001
+#           value: 4696123.672058508
+#       out_subfmt: '*'
+#       precision: 0
+#       scale: utc
+#       value: !astropy.table.SerializedColumn {name: mjd_obs}
+#   author: m.busmann
+#   event_name: TDE
+#   instrument: 3KK
+#   observatory_location: !astropy.coordinates.earth.EarthLocation
+#     ellipsoid: WGS84
+#     x: !astropy.units.Quantity
+#       unit: *id001
+#       value: 4207201.562307619
+#     y: !astropy.units.Quantity
+#       unit: *id001
+#       value: 895193.5684994106
+#     z: !astropy.units.Quantity
+#       unit: *id001
+#       value: 4696123.672058508
+#   target_coord: !astropy.coordinates.sky_coordinate.SkyCoord
+#     dec: !astropy.coordinates.Latitude
+#       unit: &id002 !astropy.units.Unit {unit: deg}
+#       value: 53.40535
+#     frame: icrs
+#     ra: !astropy.coordinates.Longitude
+#       unit: *id002
+#       value: 232.76541666666665
+#       wrap_angle: !astropy.coordinates.Angle
+#         unit: *id002
+#         value: 360.0
+#     representation_type: spherical
+#   telescope: Fraunhofer-Teleskop Wendelstein
+# schema: astropy-2.0
+filename date_obs mjd_obs exptime band zp fwhm seeing mag_lim_global flux flux_err mag mag_err mag_min mag_max mag_lim_aper
+vcoadd_TDE2022fpx_250530_g.fits 2025-05-30T22:19:30 60825.93021026 540.0 g 29.95672035 4.13 0.83 24.00358 26139.928728921055 80.19272655843827 18.91345935216781 0.00333084866013554 18.910133602312552 18.916795320531907 24.003579763774162
+vcoadd_TDE2022fpx_250530_i.fits 2025-05-30T22:12:50 60825.92558219 540.0 i 30.00758876 4.68 0.94 23.3522 50221.23552911532 153.12119799633987 18.255370277743697 0.00331033728320329 18.252064976725077 18.258685671806848 23.35219732745519
+vcoadd_TDE2022fpx_250530_H.fits 2025-05-30T22:19:45 60825.93038239 509.2152 H 31.357318890828928 3.91 0.98 21.202465330828925 342208.62089610694 3844.3355343415265 17.521591525679693 0.012197045948003667 17.50946248108909 17.533857599244072 21.202462539138942
+vcoadd_TDE2022fpx_250530_K.fits 2025-05-30T22:13:05 60825.9257527 509.2152 K 31.621240680130676 4.06 1.02 19.676764700130676 819061.4463527766 19983.30763809111 16.837949470262817 0.02648958840647259 16.811777864194482 16.864767556772602 19.67676910762054

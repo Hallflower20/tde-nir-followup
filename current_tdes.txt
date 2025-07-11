@@ -1,0 +1,10 @@
+name,ra,dec,comments,desi_host
+2023ugy,325.183417,21.016269, Legacy MIR flares, y
+2022fpx,232.765417,53.40535, Legacy MIR flares, n but desi flare
+2025hbw,143.0034516,46.1042502, n
+2025lxx,237.4049777,52.3209818, n
+2025kkj,222.9691506,8.9050655, y
+2025cyj,141.332617,23.502693, Set already, y
+2025fak,191.552910,2.254655, Nice H TDE, y
+2025eve,138.673793,  15.702341, Set already, y
+2025nha,235.000179,  66.097607, Needs to be classified, y
